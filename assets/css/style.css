@@ -1,10 +1,3 @@
-/**
-* Template Name: KnightOne
-* Updated: Mar 10 2023 with Bootstrap v5.2.3
-* Template URL: https://bootstrapmade.com/knight-simple-one-page-bootstrap-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 
 /*--------------------------------------------------------------
 # General
@@ -577,6 +570,7 @@ section {
 
 .section-title h2 {
   font-size: 32px;
+  color: #272222;
   font-weight: bold;
   margin-bottom: 20px;
   padding-bottom: 20px;
@@ -596,7 +590,7 @@ section {
 
 .section-title p {
   margin-bottom: 0;
-  color: #777777;
+  color: #352f2f;
   font-size: 15px;
 }
 
@@ -658,18 +652,21 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Services
+# products
 --------------------------------------------------------------*/
-.services .icon-box {
-  padding: 60px 30px;
+.stypro{
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/cta-bg.jpg") fixed center center;
+}
+.products .icon-box {
+  padding: 8px 30px;
   transition: all ease-in-out 0.3s;
   background: #fefefe;
-  box-shadow: 0px 5px 90px 0px rgba(110, 123, 131, 0.1);
+  box-shadow: 0px 5px 90px 0px rgba(255, 255, 255, 0.1);
   border-radius: 18px;
   border-bottom: 5px solid #fff;
 }
 
-.services .icon-box .icon {
+.products .icon-box .icon {
   width: 64px;
   height: 64px;
   background: #009961;
@@ -682,53 +679,63 @@ section {
   color: #fff;
 }
 
-.services .icon-box .icon i {
+.products .icon-box .icon i {
   font-size: 28px;
 }
 
-.services .icon-box h4 {
+.products .icon-box h4 {
   font-weight: 700;
   margin-bottom: 15px;
   font-size: 24px;
 }
 
-.services .icon-box h4 a {
+.products .icon-box h4 a {
   color: #282828;
   transition: ease-in-out 0.3s;
 }
 
-.services .icon-box p {
+.products .icon-box p {
   line-height: 24px;
   font-size: 14px;
   margin-bottom: 0;
 }
 
-.services .icon-box:hover {
+.products .icon-box:hover {
   transform: translateY(-10px);
   border-color: #009961;
 }
 
-.services .icon-box:hover h4 a {
+.products .icon-box:hover h4 a {
   color: #009961;
+}
+
+.stypro .products  .ss  {
+  display: flex;
+  margin: 5px auto;
+}
+
+.icon-box button{
+  display: flex;
+  margin: 5px auto;
 }
 
 /*--------------------------------------------------------------
 # Cta
 --------------------------------------------------------------*/
 .cta {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/cta-bg.jpg") fixed center center;
+  background: linear-gradient(rgb(246, 245, 245), rgb(250, 247, 247));
   background-size: cover;
   padding: 120px 0;
 }
 
 .cta h3 {
-  color: #fff;
+  color: #181717;
   font-size: 28px;
   font-weight: 700;
 }
 
 .cta p {
-  color: #fff;
+  color: #1a1818;
 }
 
 .cta .cta-btn {
@@ -742,7 +749,7 @@ section {
   transition: 0.5s;
   margin: 10px;
   background: #009961;
-  color: #fff;
+  color: #e4dfdf;
   border-radius: 50px;
 }
 
@@ -828,7 +835,8 @@ section {
 # Counts
 --------------------------------------------------------------*/
 .counts {
-  background: url("../img/counts-bg.jpg") center center no-repeat;
+  /* background: url("../img/counts-bg.jpg") center center no-repeat; */
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/counts-bg.jpg") fixed center center;
   background-size: cover;
   padding: 80px 0 60px 0;
   position: relative;
@@ -875,6 +883,83 @@ section {
     background-attachment: fixed;
   }
 }
+/* =========================our values================================== */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
+  justify-items: center;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1000px;
+  padding: 20px;
+}
+
+@media only screen and (max-width: 767px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(8, auto);
+  }
+}
+
+.grid-item {
+  grid-column: span 1;
+  grid-row: span 1;
+  text-align: center;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.grid-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.grid-item-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.grid-item-icon {
+  font-size: 3rem;
+  color: #e74c3c;
+  margin-bottom: 10px;
+}
+
+.grid-item h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.grid-item p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+@media only screen and (max-width: 767px) {
+  .grid-item-icon {
+    font-size: 2rem;
+  }
+
+  .grid-item h3 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+  }
+
+  .grid-item p {
+    font-size: 1rem;
+    line-height: 1.3;
+  }
+}
+
+
 
 /*--------------------------------------------------------------
 # Portfolio
@@ -977,7 +1062,7 @@ section {
 /*--------------------------------------------------------------
 # Portfolio Details
 --------------------------------------------------------------*/
-.portfolio-details {
+/* .portfolio-details {
   padding-top: 40px;
 }
 
@@ -1037,126 +1122,151 @@ section {
 
 .portfolio-details .portfolio-description p {
   padding: 0;
+} */
+/*------------------------------------------
+slider client
+------------------------------------------*/
+.clients{
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/counts-bg.jpg") fixed center center;
+  height: 30ch;
 }
+
+
 
 /*--------------------------------------------------------------
-# Pricing
+# slider product
+
 --------------------------------------------------------------*/
-.pricing {
-  background-color: #f9f9f9;
-}
 
-.pricing .box {
-  padding: 40px 20px;
+.swiper-slide {
   text-align: center;
-  border-radius: 8px;
-  position: relative;
-  overflow: hidden;
-  background: #fefefe;
-  box-shadow: 0px 5px 90px 0px rgba(110, 123, 131, 0.1);
-}
-
-.pricing .box h3 {
-  font-weight: 400;
-  padding: 15px;
-  margin-top: 15px;
   font-size: 18px;
-  font-weight: 600;
-  color: #282828;
+  background-color: #3ac5997b;
+  border-radius: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper-container {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
-.pricing .box h4 {
-  font-size: 42px;
-  color: #009961;
-  font-weight: 500;
-  font-family: "Open Sans", sans-serif;
+#hero .container .row .col-xl-8 .swiper-container .swiper-wrapper {
+  display: flex;
+  align-items: center;
+}
+/* Carrier Section */
+.carrier {
+  background-color: #f7f7f7;
+  padding: 80px 0;
+}
+
+.carrier .section-title {
+  text-align: auto;
+  margin-bottom: 50px;
+}
+
+.carrier .section-title h2 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #333;
   margin-bottom: 20px;
 }
 
-.pricing .box h4 sup {
-  font-size: 20px;
-  top: -15px;
-  left: -3px;
-}
-
-.pricing .box h4 span {
-  color: #bababa;
-  font-size: 16px;
-  font-weight: 300;
-}
-
-.pricing .box ul {
-  padding: 20px 0;
-  list-style: none;
-  color: #282828;
-  text-align: center;
-  line-height: 20px;
-  font-size: 14px;
-}
-
-.pricing .box ul li {
-  padding-bottom: 16px;
-}
-
-.pricing .box ul i {
-  color: #009961;
+.carrier .section-title p {
   font-size: 18px;
-  padding-right: 4px;
+  font-weight: 500;
+  color: #888;
+  margin-bottom: 0;
 }
 
-.pricing .box ul .na {
-  color: #ccc;
-  text-decoration: line-through;
+.carrier .form-group {
+  margin-bottom: 30px;
 }
 
-.pricing .box .btn-wrap {
-  padding: 15px;
-  text-align: center;
+.carrier .form-group label {
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
 }
 
-.pricing .box .btn-buy {
-  display: inline-block;
-  padding: 10px 40px 12px 40px;
-  border-radius: 50px;
-  border: 2px solid #009961;
-  color: #009961;
-  font-size: 14px;
-  font-weight: 400;
-  font-family: "Raleway", sans-serif;
-  font-weight: 600;
-  transition: 0.3s;
+.carrier .form-control {
+  height: 50px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding: 0 20px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
 }
 
-.pricing .box .btn-buy:hover {
-  background: #009961;
+.carrier .form-control:focus {
+  outline: none;
+  box-shadow: none;
+  border-color: #0088cc;
+}
+
+.carrier .custom-file-label {
+  height: 50px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding: 15px 20px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.carrier .custom-file-label:hover {
+  background-color: #0088cc;
   color: #fff;
 }
 
-.pricing .recommended {
-  border-color: #009961;
-}
-
-.pricing .recommended .btn-buy {
-  background: #009961;
+.carrier .btn-primary {
+  background-color: #0088cc;
+  border-color: #0088cc;
+  border-radius: 5px;
+  padding: 15px 30px;
+  font-size: 18px;
+  font-weight: 500;
   color: #fff;
+  transition: all 0.3s ease;
 }
 
-.pricing .recommended .btn-buy:hover {
-  background: #00b371;
-  border-color: #00b371;
+.carrier .btn-primary:hover {
+  background-color: #fff;
+  border-color: #0088cc;
+  color: #0088cc;
 }
 
-.pricing .recommended-badge {
-  position: absolute;
-  top: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 1;
-  font-size: 13px;
-  padding: 3px 25px 6px 25px;
-  background: #edfbf0;
-  color: #009961;
-  border-radius: 50px;
+@media (max-width: 767.98px) {
+  .carrier .section-title h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+
+  .carrier .section-title p {
+    font-size: 16px;
+  }
+
+  .carrier .form-control {
+    height: 40px;
+    font-size: 14px;
+  }
+
+  .carrier .custom-file-label {
+    height: 40px;
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+
+  .carrier .btn-primary {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
 }
 
 /*--------------------------------------------------------------
