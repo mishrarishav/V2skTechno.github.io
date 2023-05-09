@@ -230,3 +230,32 @@
   new PureCounter();
 
 })()
+// slide  products
+var mySwiper = new Swiper('.swiper-container', {
+              loop: true,
+              pagination: {
+                el: '.swiper-pagination',
+                clickable: true
+              },
+              autoplay: {
+                delay: 2000
+              },
+              slidesPerView: 4,
+              spaceBetween: 30,
+              centeredSlides: true,
+            });
+
+// slide clients
+            // var mySwiper = new Swiper('.swiper-container', {
+            //   slidesPerView: 4,
+            //   spaceBetween: 30,
+            //   loop: true,
+            //   pagination: {
+            //     el: '.swiper-pagination',
+            //     clickable: true,
+            //   },
+            // });
+
+
+            // -========================validation for carrier=============
+           
