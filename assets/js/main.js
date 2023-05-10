@@ -236,7 +236,7 @@
               loop: true,
               pagination: {
                 el: '.swiper-pagination',
-                type: 'progressbar', // or 'fraction'
+                type: 'none', // or 'fraction'
                 clickable: true
               },
               autoplay: {
