@@ -231,10 +231,12 @@
 
 })()
 // slide  products
-var mySwiper = new Swiper('.swiper-container', {
+
+            var mySwiper = new Swiper('.swiper-container', {
               loop: true,
               pagination: {
                 el: '.swiper-pagination',
+                type: 'progressbar', // or 'fraction'
                 clickable: true
               },
               autoplay: {
@@ -244,6 +246,7 @@ var mySwiper = new Swiper('.swiper-container', {
               spaceBetween: 30,
               centeredSlides: true,
             });
+            
 
 // slide clients
             // var mySwiper = new Swiper('.swiper-container', {
