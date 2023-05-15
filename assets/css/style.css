@@ -1652,6 +1652,96 @@ slider client
 
 /* ========================================================================================================= */
 
+
+
+@media (min-width: 992px) {
+  .col-lg-4 {
+    margin-bottom: 40px; /* Add gap between sections */
+  }
+
+  .col-lg-4:last-child {
+    margin-bottom: 0; /* Remove bottom margin of the last column */
+  }
+
+  .col-lg-4 {
+    text-align: left; /* Align to the left */
+    width: 33.3333%;
+    float: left;
+  }
+}
+
+@media (max-width: 991px) {
+  .col-lg-4 {
+    width: 100%;
+    text-align: left;
+  }
+}
+
+.challenges-sections {
+  background-image: url('/assets/img/backgrn.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 40px 0; /* Add vertical padding */
+}
+
+.challenges-sections h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #d0e3db;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+
+.challenges-sections p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #e9e4e4;
+  text-align: left;
+  margin-bottom: 15px;
+}
+#benefits ul li {
+ 
+  font-family: "Open Sans", sans-serif;
+  color: #ffffff;
+
+}
+
+.iot-devices-list {
+  padding: 0;
+  list-style: none;
+  text-align: left; /* Align list to the left */
+}
+
+.iot-devices-list li {
+  position: relative;
+  padding-left: 40px;
+  margin-bottom: 10px;
+  color: #e6e1e1;
+}
+
+
+
+.iot-devices-list li:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.challenges-sections img {
+  width: 100%;
+  height: auto;
+}
+
+
+
 /*                                                      IOT    challenges-section */
 
 /* ======================================================================================================= */
@@ -1695,6 +1785,7 @@ slider client
   text-align: left;
   margin-bottom: 20px;
 }
+
 
 .challenges-section p {
   font-size: 16px;
