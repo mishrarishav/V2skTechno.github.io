@@ -1218,42 +1218,42 @@ slider client
   display: flex;
   align-items: center;
 }
-/* Carrier Section */
-.carrier {
+/* Career Section */
+.Career {
   background-color: #f7f7f7;
   padding: 80px 0;
 }
 
-.carrier .section-title {
+.Career .section-title {
   text-align: auto;
   margin-bottom: 50px;
 }
 
-.carrier .section-title h2 {
+.Career .section-title h2 {
   font-size: 40px;
   font-weight: 700;
   color: #333;
   margin-bottom: 20px;
 }
 
-.carrier .section-title p {
+.Career .section-title p {
   font-size: 18px;
   font-weight: 500;
   color: #888;
   margin-bottom: 0;
 }
 
-.carrier .form-group {
+.Career .form-group {
   margin-bottom: 30px;
 }
 
-.carrier .form-group label {
+.Career .form-group label {
   font-size: 18px;
   font-weight: 500;
   color: #333;
 }
 
-.carrier .form-control {
+.Career .form-control {
   height: 50px;
   border-radius: 5px;
   border: 1px solid #ccc;
@@ -1263,13 +1263,13 @@ slider client
   color: #333;
 }
 
-.carrier .form-control:focus {
+.Career .form-control:focus {
   outline: none;
   box-shadow: none;
   border-color: #0088cc;
 }
 
-.carrier .custom-file-label {
+.Career .custom-file-label {
   height: 50px;
   border-radius: 5px;
   border: 1px solid #ccc;
@@ -1281,12 +1281,12 @@ slider client
   cursor: pointer;
 }
 
-.carrier .custom-file-label:hover {
+.Career .custom-file-label:hover {
   background-color: #0088cc;
   color: #fff;
 }
 
-.carrier .btn-primary {
+.Career .btn-primary {
   background-color: #0088cc;
   border-color: #0088cc;
   border-radius: 5px;
@@ -1297,34 +1297,34 @@ slider client
   transition: all 0.3s ease;
 }
 
-.carrier .btn-primary:hover {
+.Career .btn-primary:hover {
   background-color: #fff;
   border-color: #0088cc;
   color: #0088cc;
 }
 
 @media (max-width: 767.98px) {
-  .carrier .section-title h2 {
+  .Career .section-title h2 {
     font-size: 30px;
     margin-bottom: 10px;
   }
 
-  .carrier .section-title p {
+  .Career .section-title p {
     font-size: 16px;
   }
 
-  .carrier .form-control {
+  .Career .form-control {
     height: 40px;
     font-size: 14px;
   }
 
-  .carrier .custom-file-label {
+  .Career .custom-file-label {
     height: 40px;
     font-size: 14px;
     padding: 10px 20px;
   }
 
-  .carrier .btn-primary {
+  .Career .btn-primary {
     padding: 10px 20px;
     font-size: 16px;
   }
@@ -1591,19 +1591,9 @@ slider client
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* ==================================================================================  */
+/*                              IOT why-section                                       */
+/* ==================================================================================  */
 @media (min-width: 992px) {
   .col-lg-8 {
     text-align: left;
@@ -1660,11 +1650,11 @@ slider client
 
 
 
+/* ========================================================================================================= */
 
+/*                                                      IOT    challenges-section */
 
-
-
-
+/* ======================================================================================================= */
 
 
 
@@ -1713,6 +1703,12 @@ slider client
   text-align: left;
   margin-bottom: 15px;
 }
+#benefits ul li {
+ 
+  font-family: "Open Sans", sans-serif;
+  color: #ffffff;
+
+}
 
 .iot-devices-list {
   padding: 0;
@@ -1726,6 +1722,8 @@ slider client
   margin-bottom: 10px;
   color: #e6e1e1;
 }
+
+
 
 .iot-devices-list li:before {
   content: "";
@@ -1772,9 +1770,9 @@ slider client
 
 
 
-
-
-
+/* ====================================================================================================
+                                                                IOT cARD Grid
+=========================================================================================================*/
 
 .card {
   margin-bottom: 20px;
@@ -1838,11 +1836,46 @@ slider client
 
 
 
+/* ===============================crm============================== */
+/*                                    CRM                          */
+/* =============================================================== */
+/* External CSS (styles.css) */
 
+#benefits_crm {
+  padding: 80px 0;
+  background-color: #f5f5f5;
+  position: relative;
+  overflow: hidden;
+}
 
+.benefits-crm .card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
+.benefits-crm .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
+.benefits-crm .card-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
 
+.benefits-crm .card-text {
+  font-size: 16px;
+  color: #555;
+}
+
+@media (max-width: 767px) {
+  .benefits-crm .card {
+      margin-bottom: 30px;
+  }
+}
 
 
 /*--------------------------------------------------------------
