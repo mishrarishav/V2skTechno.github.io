@@ -1682,7 +1682,7 @@ slider client
 }
 
 .challenges-section {
-  background-image: url('path/to/your/background-image.jpg');
+  background-image: url('/assets/img/backgrn.jpg');
   background-size: cover;
   background-position: center;
   padding: 40px 0; /* Add vertical padding */
@@ -1741,12 +1741,6 @@ slider client
 .challenges-section img {
   width: 100%;
   height: auto;
-}
-.challenges-section {
-  background-image: url('/assets/img/backgrn.jpg');
-  background-size: cover;
-  background-position: center;
-  padding: 40px 0; /* Add vertical padding */
 }
 
 
