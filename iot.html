@@ -28,6 +28,82 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet" />
+  <style>
+    h2 {
+      text-align: center;
+  padding: 10px;
+  margin: 20px 0;
+  background-color: #009961ac;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+}
+.card {
+  margin-bottom: 20px;
+  border-radius: 10px;
+  transition: all 0.3s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  height: 100%;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+  margin-bottom: 10px;
+}
+
+.card-text {
+  margin-bottom: 20px;
+}
+
+#type-iot {
+  background-image: url('./assets/img/secondPage/bg-mes.jpg');
+  background-position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+#type-iot h2 {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  font-size: 32px;
+  color: white;
+}
+
+#type-iot p {
+  text-align: center;
+  font-size: 18px;
+  color: rgb(13, 12, 12);
+}
+
+/* Add spacing between the boxes */
+#type-iot .row {
+  margin-bottom: 20px;
+}
+
+/* Responsive styles for mobile devices */
+@media (max-width: 767px) {
+  #type-iot h2 {
+    font-size: 24px;
+    margin-top: 20px; /* Adjusted margin for mobile */
+    margin-bottom: 20px; /* Adjusted margin for mobile */
+  }
+
+  #type-iot p {
+    font-size: 16px; /* Adjusted font size for mobile */
+  }
+
+  .card {
+    margin-bottom: 20px; /* Adjusted margin for mobile */
+  }
+}
+
+  </style>
 </head>
 
 <body>
@@ -111,7 +187,7 @@
         <div class="col-lg-6 text-center">
           <div class="iot-description">
             
-            <h4><strong>WHAT IS INTERNET OF THINGS (IOT)?</strong></p></h4>
+            <h2><strong>WHAT IS INTERNET OF THINGS (IOT)?</strong></p></h2>
             <p>
               The Internet of Things (IoT) is a system of interrelated
               physical devices, vehicles, buildings, and other items embedded
@@ -138,7 +214,7 @@
 <!-- 
   =========================================================grid card ============================================================
  -->
-  <section id="type-iot" style="background-image: url('./assets/img/secondPage/bg-mes.jpg'); background-position: relative; background-repeat: no-repeat; background-size: cover;">
+  <section id="type-iot" style="background-image: url('./assets/img/secondPage/bg-mes.jpg'); background-position: relative; background-repeat: no-repeat; background-size: cover ; ">
     <div class="container">
         <div class="row">
             <div class="col-lg-12" style="color: black;">
@@ -183,7 +259,7 @@
                         </div>
                     </div>
                     <div class="col-lg-4">
-                        <div class="card">
+                        <div class="card" style="height: 275px; width: 383px;">
                             <div class="card-body">
                                 <h4 class="card-title">Infrastructure IoT</h4> <i class="bi bi-building"></i>
                                 <p class="card-text">Infrastructure IoT is designed for use in smart cities. It involves the deployment of sensors and management systems for infrastructure monitoring.</p>
@@ -246,7 +322,7 @@
         </p>
       </div>
       <div class="col-lg-4">
-        <img src="./assets/img/secondPage/iot-devices.jpg" alt="IoT Image" />
+        <img src="./assets/img/secondPage/iot-devices.jpg" alt="IoT Image" style="height: 275px; width: 350px;" />
       </div>
       <div class="col-lg-4">
         <h2>Examples of IoT Devices</h2>

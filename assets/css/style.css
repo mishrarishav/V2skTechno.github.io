@@ -1860,61 +1860,6 @@ slider client
                                                                 IOT cARD Grid
 =========================================================================================================*/
 
-.card {
-  margin-bottom: 20px;
-  border-radius: 10px;
-  transition: all 0.3s;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  height: 100%;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
-}
-
-.card-title {
-  margin-bottom: 10px;
-}
-
-.card-text {
-  margin-bottom: 20px;
-}
-
-#type-iot {
-  background-image: url('./assets/img/secondPage/bg-mes.jpg');
-  background-position: relative;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-
-#type-iot h2 {
-  text-align: center;
-  margin-top: 40px;
-  margin-bottom: 30px;
-  font-size: 32px;
-  color: white;
-}
-
-#type-iot p {
-  text-align: center;
-  font-size: 18px;
-  color: rgb(13, 12, 12);
-}
-
-/* Add spacing between the boxes */
-#type-iot .row {
-  margin-bottom: 20px;
-}
-
-/* Responsive styles for mobile devices */
-@media (max-width: 767px) {
-  #type-iot h2 {
-    font-size: 24px;
-  }
-}
 
 
 
