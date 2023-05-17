@@ -1,6 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -26,21 +23,66 @@
   <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+  
   <style>
     h2 {
       text-align: center;
-  padding: 10px;
-  margin: 20px 0;
-  background-color: #009961ac;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  border-radius: 20px;
-}
-  </style>
+      padding: 10px;
+      margin: 20px 0;
+      background-color: #009961ac;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 20px;
+    }
 
-</head>
+    #hero .container {
+      background-color: rgba(43, 175, 190, 0.436);
+      padding: 20px;
+      border-radius: 20px;
+      margin-top: 60px;
+    }
+
+    #hero h1 {
+      font-size: 2.5rem;
+      color: #ebe7e7;
+    }
+
+    #hero p {
+      font-size: 1.4rem;
+      color: #f0eaea;
+      line-height: 1.6;
+    }
+    .mes-image {
+            max-width: 100%; /* Adjust the image width as needed */
+            height: 640px;
+        }
+
+    @media (max-width: 767px) {
+      #hero {
+        background-size: contain;
+      }
+
+      #hero .container {
+        padding: 10px;
+        border-radius: 10px;
+        margin-top: 60px;
+      }
+
+      #hero h1 {
+        font-size: 1.8rem;
+      }
+
+      #hero p {
+        font-size: 1.2rem;
+        line-height: 1.6;
+      }
+      .mes-image {
+            max-width: 100%; /* Adjust the image width as needed */
+            height: auto;
+        }
+    }
+  </style>
 
 <body>
 
@@ -54,7 +96,7 @@
 
           <nav id="navbar" class="navbar order-last order-lg-0">
             <ul>
-              <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+              <li><a class="nav-link scrollto active" href="./index.html">Home</a></li>
               <li><a class="nav-link scrollto" href="#about">About</a></li>
               <li class="dropdown">
                 <a href="#products"><span>Products</span> <i class="bi bi-chevron-down"></i></a>
@@ -69,7 +111,7 @@
                 </ul>
               </li>
 
-              <li><a class="nav-link scrollto" href="#Career">Career</a></li>
+              <li><a class="nav-link scrollto" href="./Career.html">Career</a></li>
               <!-- <li class="dropdown"><a href="#">Services<span></span> <i class="bi bi-chevron-down"></i></a>
                 <ul>
                   <li><a href="#">BUSINESS SECURITY</a></li>
@@ -91,18 +133,28 @@
   </header>
   <!-- End Header -->
   <!-- =====================hero====================================== -->
-<section id="hero" class="bg-primary py-5" style="width: 100%; height: 100vh; background: url('./assets/img/secondPage/mes-2.jpg') top center; background-size: cover; position: relative;">
+
+
+
+  <section id="hero" class="bg-primary py-5 mes-image" style="width: 100%; height: 100vh; background-image: url('./assets/img/secondPage/mes-bg1.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center center; position: relative;">
+    <link rel="stylesheet" href="styles.css">
     <div class="container">
       <div class="row align-items-center">
-        <div class="col-md-6 text-md-start text-center text-white">
-          <h1 class="fw-bold">MANUFACTURING EXECUTION SYSTEM (MES)</h1>
+        <div class="col-md-12 text-center">
+          <h1 class="fw-bold">Manufacturing Execution System (MES):</h1>
+          <p style="white-space: normal;">As a leader in the IT industry, V2SK offers expertise in Manufacturing Execution System (MES) solutions. MES provides real-time visibility and control over the manufacturing process, enabling businesses to optimize production, increase efficiency, and ensure product quality.</p>
+          <p style="white-space: normal;">Joining our team means being part of MES projects where you'll have the chance to design and implement MES solutions, integrate with other manufacturing systems, and work closely with clients to streamline their operations and achieve operational excellence.</p>
         </div>
-        <!-- <div class="col-md-6">
-          <img src="./assets/img/secondPage/images.jpeg" class="img-fluid rounded" alt="Image">
-        </div> -->
       </div>
     </div>
   </section>
+  
+  
+  
+  
+
+
+  
   <section id="mes-features" class="section-bg" style="background-color: rgb(255, 255, 255); position: relative;">
     <div class="container">
       <div class="row justify-content-center">
@@ -192,45 +244,47 @@
   <section id="how-mes" class="bg-primary text-white py-5"
     style="background-image: url('./assets/img/secondPage/bg-mes.jpg'); background-position: center; background-size: cover;">
     <div class="container">
-      <div class="row align-items-center">
-        <div class="col-md-8">
-          <h2>How MES (Manufacturing Execution System) Can Help Your Business?</h2>
-          <p>MES (Manufacturing Execution System) software is designed to help manufacturers improve their
-            productivity, quality, and compliance. This type of software provides real-time data about
-            the manufacturing process, enabling managers to identify and address issues as they arise.
-            Here are some of the ways MES can help your business:</p>
-          <ul>
-            <li><strong>Improve Efficiency:</strong> MES software can help you optimize your production
-              process by identifying inefficiencies and bottlenecks. By providing real-time data, it
-              enables you to make informed decisions about production scheduling, resource allocation,
-              and inventory management.</li>
-            <li><strong>Ensure Quality:</strong> MES software can help you improve the quality of your
-              products by monitoring every stage of the production process and identifying defects
-              early on. This enables you to take corrective action before defective products reach
-              customers, reducing the risk of product recalls and damage to your reputation.</li>
-            <li><strong>Enhance Compliance:</strong> MES software can help you comply with regulatory
-              requirements by capturing data about every aspect of the production process, from raw
-              materials to finished products. This enables you to demonstrate compliance with industry
-              standards and regulations.</li>
-            <li><strong>Improve Traceability:</strong> MES software can help you track the movement of
-              materials and products throughout the production process. This enables you to identify
-              the source of defects and take corrective action quickly, reducing the risk of quality
-              issues and improving customer satisfaction.</li>
-            <li><strong>Reduce Costs:</strong> MES software can help you reduce costs by improving
-              efficiency, quality, and compliance. By optimizing your production process and reducing
-              waste, you can save money on labor, materials, and energy.</li>
-          </ul>
-          <p>If you're looking to improve your manufacturing process, MES software is an excellent tool to
-            consider. It can help you increase productivity, improve product quality, and ensure
-            compliance with industry standards and regulations.</p>
+        <div class="row align-items-center">
+            <div class="col-md-8">
+                <h2>How MES (Manufacturing Execution System) Can Help Your Business?</h2>
+                <p>MES (Manufacturing Execution System) software is designed to help manufacturers improve their
+                    productivity, quality, and compliance. This type of software provides real-time data about
+                    the manufacturing process, enabling managers to identify and address issues as they arise.
+                    Here are some of the ways MES can help your business:</p>
+                <ul>
+                    <li><strong>Improve Efficiency:</strong> MES software can help you optimize your production
+                        process by identifying inefficiencies and bottlenecks. By providing real-time data, it
+                        enables you to make informed decisions about production scheduling, resource allocation,
+                        and inventory management.</li>
+                    <li><strong>Ensure Quality:</strong> MES software can help you improve the quality of your
+                        products by monitoring every stage of the production process and identifying defects
+                        early on. This enables you to take corrective action before defective products reach
+                        customers, reducing the risk of product recalls and damage to your reputation.</li>
+                    <li><strong>Enhance Compliance:</strong> MES software can help you comply with regulatory
+                        requirements by capturing data about every aspect of the production process, from raw
+                        materials to finished products. This enables you to demonstrate compliance with industry
+                        standards and regulations.</li>
+                    <li><strong>Improve Traceability:</strong> MES software can help you track the movement of
+                        materials and products throughout the production process. This enables you to identify
+                        the source of defects and take corrective action quickly, reducing the risk of quality
+                        issues and improving customer satisfaction.</li>
+                    <li><strong>Reduce Costs:</strong> MES software can help you reduce costs by improving
+                        efficiency, quality, and compliance. By optimizing your production process and reducing
+                        waste, you can save money on labor, materials, and energy.</li>
+                </ul>
+                <p>If you're looking to improve your manufacturing process, MES software is an excellent tool to
+                    consider. It can help you increase productivity, improve product quality, and ensure
+                    compliance with industry standards and regulations.</p>
+            </div>
+            <div class="col-md-4">
+                <img src="./assets/img/secondPage/mes-graph2.jpg" alt="MES" class="mes-image">
+            </div>
         </div>
-        <div class="col-md-4">
-          <img src="./assets/img/secondPage/mes-graph2.jpg" style="height: 500px;
-                    width: 410px;" alt="MES">
-        </div>
-      </div>
     </div>
-  </section>
+</section>
+
+
+
   <section id="why-mes" class="bg-white py-5">
     <div class="container">
       <div class="row align-items-center">

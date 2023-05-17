@@ -924,6 +924,18 @@ section {
 
 .grid-item {
   grid-column: span 1;
+  height: 420px;
+  grid-row: span 1;
+  text-align: center;
+  background-color: #fff;
+  padding: 20px;
+  padding-right: 30px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+#values .grid-item {
+  grid-column: span 1;
   height: 300px;
   grid-row: span 1;
   text-align: center;
