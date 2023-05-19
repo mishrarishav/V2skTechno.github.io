@@ -82,15 +82,15 @@
   </header><!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex flex-column justify-content-center">
+  <!-- <section id="hero" class="d-flex flex-column justify-content-center">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-xl-8">
           <h1>V2sk- Bussines Solutions</h1>
-          <h2>We are team of designers making websites </h2>
+          <h2>We are team of designers making websites </h2> -->
           <!-- 
           <a href="https://www.youtube.com/watch?v=6fiJxDecwj8" class="glightbox play-btn mb-4"></a> -->
-
+<!--   
           <div class="swiper-container">
             <div class="swiper-wrapper">
               <div class="swiper-slide">ERP</div>
@@ -101,15 +101,6 @@
               <div class="swiper-slide">IOT</div>
               <div class="swiper-slide">Embedded</div>
               <div class="swiper-slide">Automation</div>
-
-              <!-- <div class="swiper-slide">ERP</div>
-              <div class="swiper-slide">MES</div>
-              <div class="swiper-slide">LMS</div>
-              <div class="swiper-slide">CRM</div>
-              <div class="swiper-slide">MIS</div>
-              <div class="swiper-slide">IOT</div>
-              <div class="swiper-slide">Embedded & Automation</div> -->
-
             </div>
             <div class="swiper-pagination"></div>
           </div>
@@ -117,7 +108,311 @@
         </div>
       </div>
     </div>
-  </section><!-- End Hero -->
+  </section> -->
+
+
+
+
+
+
+
+
+  <style>
+    .ball {
+background-image: linear-gradient(to bottom right, #91defe, #99c0f9, #bdb6ec, #d7b3e3, #efb3d5, #f9bccc);
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+height: 100vh;
+overflow: hidden;
+}
+
+.ball-container {
+animation: float 10s  infinite;
+height: 200px;
+width: 200px;
+border-radius: 50%;
+position: absolute; 
+background: radial-gradient(circle at 75% 30%, #ffffff 5px, aqua 8%, darkblue 60%, aqua 100%);
+box-shadow: inset 0 0 20px #7bc6af, inset 10px 0 46px #7bc6af, inset 88px 0px 60px #2f7d65, inset -20px -60px 100px #fde9ea, inset 0 50px 140px #fde9ea,0 0 90px #a4d8d8;;
+display: flex;
+align-items: center; 
+justify-content: center; 
+font-family: 'Oswald';
+font-weight: 900;
+overflow: visible;
+}
+
+  /* Add individual positioning for each bubble */
+
+  .post.bubble:nth-child(1) {
+  transform: rotate(0deg) translateY(-90px) rotate(0deg);
+  top: -91px;
+    left: -213px;
+  animation-delay: 1.2s;
+}
+
+.post.bubble:nth-child(2) {
+  transform: rotate(45deg) translateY(-90px) rotate(-45deg);
+  top: -102px;
+    left: 61px;
+    animation-delay: -4.8s;
+}
+
+.post.bubble:nth-child(3) {
+  transform: rotate(90deg) translateY(-90px) rotate(-90deg);
+  top: -136px;
+    left: 421px;
+    animation-delay: -2.1s;
+}
+
+.post.bubble:nth-child(4) {
+  transform: rotate(135deg) translateY(-90px) rotate(-135deg);
+  top: -108px;
+  left: 749px;
+  animation-delay: 1.8s;
+}
+
+.post.bubble:nth-child(5) {
+  transform: rotate(180deg) translateY(-90px) rotate(-180deg);
+  top: -137px;
+    left: -74px;
+    animation-delay: 1.9s;
+}
+
+.post.bubble:nth-child(6) {
+  transform: rotate(225deg) translateY(-90px) rotate(-225deg);
+  top: -84px;
+    left: 528px;
+    animation-delay: -2.5s;
+}
+
+.post.bubble:nth-child(7) {
+  transform: rotate(270deg) translateY(-90px) rotate(-270deg);
+  top: -113px;
+    left: 295px;
+    animation-delay: 0.6s;
+
+}
+
+.post.bubble:nth-child(8) {
+  transform: rotate(315deg) translateY(-90px) rotate(-315deg);
+  top: -64px;
+    left: 628px;
+    animation-delay: -0.3s;
+}
+
+.post.bubble {
+  position: absolute;
+  animation: float 5s infinite;
+  overflow: visible;
+}
+
+@keyframes float {
+  0% {
+    transform: rotate(0deg) translateY(0px) rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(180deg) translateY(-150px) rotate(-180deg);
+  }
+
+  50% {
+    transform: rotate(360deg) translateY(0px) rotate(-360deg);
+  }
+
+  75% {
+    transform: rotate(540deg) translateY(150px) rotate(-540deg);
+  }
+
+  100% {
+    transform: rotate(720deg) translateY(0px) rotate(-720deg);
+  }
+}
+
+.post.bubble.collide {
+  animation-name: collide;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: 2;
+}
+
+@keyframes collide {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-50px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.post.bubble.bounce {
+  animation-name: bounce;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: 1;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(10px);
+  }
+
+  50% {
+    transform: translateY(-20px);
+  }
+  75% {
+    transform: translateY(8pxpx);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+    .shadow {
+      background: #b490b2;
+      width: 150px;
+      height: 40px;
+      top: 70%;
+      animation: expand 4s infinite;
+      position: absolute;
+      border-radius: 50%;
+    }
+  
+    @keyframes expand {
+      20%, 100% {
+        transform: scale(0.2);
+      }
+  
+      50% {
+        transform: scale(4);
+      }
+    }
+
+    @media only screen and (max-width: 742px) {
+  .ball-container {
+    animation: float 4.5s ease-in-out infinite;
+    height: 120px;
+    width: 120px;
+    background: radial-gradient(circle at 75% 30%, #ffffff 5px, aqua 8%, darkblue 60%, aqua 100%);
+    box-shadow: inset 0 0 20px #7bc6af, inset 10px 0 46px #7bc6af, inset 88px 0px 60px #2f7d65, inset -20px -60px 100px #fde9ea, inset 0 50px 140px #fde9ea, 0 0 90px #a4d8d8;
+  }
+
+  .ball {
+    background-image: linear-gradient(to bottom right, #91defe, #99c0f9, #bdb6ec, #d7b3e3, #efb3d5, #f9bccc);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .shadow {
+    background: #b490b2;
+    width: 90px;
+    height: 20px;
+    top: 78%;
+    animation: expand 3s infinite;
+    position: absolute;
+    border-radius: 50%;
+  }
+
+  @keyframes expand {
+    20%,
+    100% {
+      transform: scale(0.2);
+    }
+
+    50% {
+      transform: scale(4);
+    }
+  }
+
+  .ball-container {
+    height: 120px;
+    width: 120px;
+  }
+
+  .post.bubble:nth-child(1) {
+    top: -272px !important;
+    left: 52px !important;
+  }
+
+  .post.bubble:nth-child(2) {
+    top: -240px !important;
+    left: 144px !important;
+  }
+
+  .post.bubble:nth-child(3) {
+    top: -123px !important;
+    left: 29px !important;
+  }
+
+  .post.bubble:nth-child(4) {
+    top: -115px !important;
+    left: 180px !important;
+  }
+
+  .post.bubble:nth-child(5) {
+    top: 74px !important;
+    left: 210px !important;
+  }
+
+  .post.bubble:nth-child(6) {
+    top: 36px !important;
+    left: 75px !important;
+  }
+
+  .post.bubble:nth-child(7) {
+    top: 47px !important;
+    left: 54px !important;
+  }
+
+  .post.bubble:nth-child(8) {
+    top: 89px !important;
+    left: 133px !important;
+  }
+}
+
+
+</style>
+
+
+
+<section id="hero" class="ball">
+<div class="container">
+<div class="row justify-content-center">
+<div class="col-xl-8">
+<!-- <h1>V2sk- Business Solutions</h1>
+<h2>We are a team of designers creating websites</h2> -->
+
+<div class="swiper-containerr">
+  <div class="swiper-wrapper">
+    <div class="post bubble ball-container">ERP</div>
+    <div class="post bubble ball-container">MES</div>
+    <div class="post bubble ball-container">LMS</div>
+    <div class="post bubble ball-container">CRM</div>
+    <div class="post bubble ball-container">MIS</div>
+    <div class="post bubble ball-container">IOT</div>
+    <div class="post bubble ball-container">Embedded</div>
+    <div class="post bubble ball-container">Automation</div>
+  </div>
+  <div class="swiper-pagination"></div>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+</section>
+  <!-- ==========================End Hero============================================= -->
 
   <main id="main">
 
@@ -163,23 +458,6 @@
 
       </div>
     </section><!-- End About Us Section -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

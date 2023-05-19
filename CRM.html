@@ -29,16 +29,68 @@
 
     <!-- Template Main CSS File -->
     <link href="./assets/css/style.css" rel="stylesheet">
+    
     <style>
-          h2 {
-      text-align: center;
-  padding: 10px;
-  margin: 20px 0;
-  background-color: #009961ac;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  border-radius: 20px;
-}
+           h2 {
+        text-align: center;
+        align-items: center;
+        padding: 10px;
+        margin: 20px 0;
+        background-color: #009961ac;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 20px;
+        display: inline-block;
+      }
+    
+      #hero .container {
+        text-align: center;
+        background-color: rgba(43, 175, 190, 0.436);
+        padding: 20px;
+        border-radius: 20px;
+        margin-top: 60px;
+      }
+    
+      #hero h1 {
+        font-size: 2.5rem;
+        color: #ebe7e7;
+      }
+    
+      #hero p {
+        font-size: 1.4rem;
+        color: #f0eaea;
+        line-height: 1.6;
+        text-align: center;
+      }
+    
+ 
+      @media (max-width: 767px) {
+        #hero {
+          background-size: contain;
+        }
+
+
+        .crm-image {
+            max-width: 100%; /* Adjust the image width as needed */
+            height: auto;
+        }
+    
+    
+        #hero .container {
+          padding: 10px;
+          border-radius: 10px;
+          margin-top: 60px;
+        }
+    
+        #hero h1 {
+          font-size: 1.8rem;
+        }
+    
+        #hero p {
+          font-size: 1.2rem;
+          line-height: 1.6;
+        }}
     </style>
+
 
 </head>
 
@@ -93,41 +145,21 @@
     </header>
     <!-- End Header -->
     <!-- =====================hero====================================== -->
-    <section id="hero" class="bg-primary py-5" style="width: 100%; height: 100vh; background-image: url('./assets/img/secondPage/mes-2.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center center; position: relative;">
-        <style>
-          @media (max-width: 767px) {
-            #hero {
-              background-size: contain;
-            }
-          }
-          #hero .container {
-            background-color: #2b74be9c;
-            padding: 20px;
-            border-radius: 20px;
-          }
-          #hero h1 {
-            font-size: 2.5rem;
-            color: #ebe7e7;
-          }
-          #hero p {
-            font-size: 1.2rem;
-            color: #f0eaea;
-            line-height: 1.6;
-          }
-        </style>
+
+      
+
+      <section id="hero" class="bg-primary py-5 mes-image" style="width: 100%; height: 100vh; background-image: url('./assets/img/secondPage/ERP-bg.webp'); background-size: cover; background-repeat: no-repeat; background-position: center center; position: relative;">
+        <link rel="stylesheet" href="styles.css">
         <div class="container">
           <div class="row align-items-center">
             <div class="col-md-12 text-center">
-          
-              
-              <h1 class="fw-bold">Customer Relationship Management (CRM):</h1>
-              <p>At V2SK, we specialize in providing comprehensive Customer Relationship Management (CRM) solutions to businesses. CRM plays a crucial role in managing and nurturing relationships with customers, driving sales, and enhancing customer satisfaction.</p>
-              <p>As a member of our team, you'll have the opportunity to work with industry-leading CRM platforms and technologies, develop innovative CRM strategies, and collaborate with clients to deliver customized solutions that meet their unique business needs.</p>
+              <h1 class="fw-bold" style="text-align: center;">Customer Relationship Management (CRM):</h1>
+              <p style="text-align: center; white-space: normal;">At V2SK, we specialize in providing comprehensive Customer Relationship Management (CRM) solutions to businesses. CRM plays a crucial role in managing and nurturing relationships with customers, driving sales, and enhancing customer satisfaction.</p>
+              <p style="text-align: center; white-space: normal;">As a member of our team, you'll have the opportunity to work with industry-leading CRM platforms and technologies, develop innovative CRM strategies, and collaborate with clients to deliver customized solutions that meet their unique business needs.</p>
             </div>
           </div>
         </div>
       </section>
-      
 
 
 
@@ -139,7 +171,7 @@
                     <h2 class="heading-title">Customer Relationship Management (CRM)</h2>
                     <section class="section-boxed">
                         <div class="widget-container">
-                            <p class="heading-title">What is Customer Relationship Management (CRM)?</p>
+                            <h3 class="heading-title">What is Customer Relationship Management (CRM)?</h3>
                         </div>
                         <div class="widget-container">
                             <div class="text-editor">
@@ -160,7 +192,7 @@
                     </section>
                 </div>
                 <div class="col-md-6">
-                    <section class="section-boxed">
+                    <section class="section-boxed crm-image">
                         <div class="widget-container">
                             <img src="./assets/img/secondPage/why-crm.webp" alt="CRM Image" class="crm-image">
                         </div>
@@ -170,15 +202,6 @@
         </div>
     </main>
     
-    <style>
-        /* CSS for mobile devices */
-        @media (max-width: 767px) {
-            .crm-image {
-                max-width: 100%; /* Adjust the image width as needed */
-                height: auto;
-            }
-        }
-    </style>
     
 
 
@@ -248,7 +271,7 @@
                         <div class="card mb-3">
                             <div class="card-body">
                                 <h5 class="card-title">Enhanced sales and marketing effectiveness</h5>
-                                <p class="card-text">CRM systems provide tools for managing leads, tracking sales activities, and analyzing customer data, enabling businesses to streamline their sales and marketing processes and make data-driven decisions.</p>
+                                <p class="card-text">CRM systems provide tools for managing leads, tracking sales activities, and analyzing customer data, enabling businesses to streamline their  marketing processes and make data-driven decisions.</p>
                             </div>
                         </div>
                     </div>

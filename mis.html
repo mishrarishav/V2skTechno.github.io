@@ -31,6 +31,155 @@
     <link href="./assets/css/style.css" rel="stylesheet">
     
 
+    <style>
+      h2 {
+        text-align: center;
+        align-items: center;
+        padding: 10px;
+        margin: 20px 0;
+        background-color: #009961ac;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 20px;
+        display: inline-block;
+      }
+    
+      #hero .container {
+        text-align: center;
+        background-color: rgba(43, 175, 190, 0.436);
+        padding: 20px;
+        border-radius: 20px;
+        margin-top: 60px;
+      }
+    
+      #hero h1 {
+        font-size: 2.5rem;
+        color: #ebe7e7;
+      }
+    
+      #hero p {
+        font-size: 1.4rem;
+        color: #f0eaea;
+        line-height: 1.6;
+        text-align: center;
+      }
+    
+      .mes-image {
+        max-width: 100%; /* Adjust the image width as needed */
+        height: 640px;
+      }
+    
+      @media (max-width: 767px) {
+        #hero {
+          background-size: contain;
+        }
+    
+        #hero .container {
+          padding: 10px;
+          border-radius: 10px;
+          margin-top: 60px;
+        }
+    
+        #hero h1 {
+          font-size: 1.8rem;
+        }
+    
+        #hero p {
+          font-size: 1.2rem;
+          line-height: 1.6;
+        }
+    
+        .mes-image {
+          max-width: 100%; /* Adjust the image width as needed */
+          height: auto;
+        }
+      }
+    
+      /* Custom CSS styles */
+      .section {
+        margin-bottom: 40px;
+        overflow: hidden; /* Added to contain floated images */
+      }
+    
+      .section:nth-child(even) {
+        background-color: #f2f2f2; /* Gray background color for even sections */
+      }
+    
+      .section:nth-child(even) img {
+        max-width: 100%;
+        height: 250px;
+        float: right;
+        margin-left: 20px;
+        margin-top: 89px;
+        border-radius: 20px;
+      }
+    
+      .section:nth-child(odd) img {
+        max-width: 100%;
+        height: auto;
+        float: left;
+        margin-right: 20px;
+        margin-top: 89px;
+        border-radius: 20px;
+      }
+      @media (min-width: 992px) {
+  .col-lg-8 {
+    text-align: left;
+    width: 66.6667%;
+    float: left;
+  }
+  
+  .col-lg-4 {
+    text-align: right;
+    width: 33.3333%;
+    float: right;
+  }
+}
+
+@media (max-width: 991px) {
+  .col-lg-8,
+  .col-lg-4 {
+    width: 100%;
+    text-align: left;
+  }
+}
+
+.what-section h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+.what-section{
+  background-color: #f2f2f2;
+}
+
+.what-section p {
+  position: relative;
+  padding-left: 20px;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.what-section p:before {
+  content: "\2713";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #333;
+  font-weight: bold;
+}
+
+.what-section img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+    </style>
+    
+
 </head>
 
 <body>
@@ -76,7 +225,7 @@
                     </nav>
                     <!-- .navbar -->
 
-                    <a href="#about" class="get-started-btn scrollto">Get Started</a>
+                    <a href="#hero" class="get-started-btn scrollto">Get Started</a>
                 </div>
             </div>
 
@@ -84,137 +233,139 @@
     </header>
     <!-- End Header -->
     <!-- =====================hero====================================== -->
-    <section id="hero" class="bg-primary py-5" style="width: 100%; height: 100vh; background: url('./assets/img/secondPage/mis-bg.jpg') top center; background-size: cover; position: relative;">
+   
+
+
+
+
+      <section id="hero" class="bg-primary py-5 mes-image" style="width: 100%; height: 100vh; background-image: url('./assets/img/secondPage/ERP-bg.webp'); background-size: cover; background-repeat: no-repeat; background-position: center center; position: relative;">
+        <link rel="stylesheet" href="styles.css">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-6 text-md-start text-center text-white">
-                    <h1 class="fw-bold">MIS (MANAGEMENT INFORMATION SYSTEMS)</h1>
-                </div>
-                <!-- <div class="col-md-6">
-                    <img src="./assets/img/secondPage/purpose-crm.jpg" class="img-fluid rounded" alt="Image">
-                </div> -->
+          <div class="row align-items-center">
+            <div class="col-md-12 text-center">
+              <h1 class="fw-bold" style="text-align: center;">Management Information System (MIS):</h1>
+              <p style="text-align: center; white-space: normal;">A Management Information System (MIS) is an information system used for decision-making, and for the coordination, control, analysis, and visualization of information in an organization.</p>
+              <p style="text-align: center; white-space: normal;">A Management Information System (MIS) is a vital information system that facilitates decision-making, coordination, control, analysis, and visualization of data within an organization. By providing timely and accurate information, MIS empowers management to make informed choices, enhance organizational efficiency, and gain valuable insights for strategic planning and effective resource allocation.</p>
             </div>
+          </div>
         </div>
-    </section>
+      </section>
 
 
 
 
 
 
-    <div >
-        <p>
-          <strong>MANAGEMENT INFORMATION SYSTEM</strong>
-        </p>
-        <p>
-          <strong>What is MIS?</strong>
-          A management information system (MIS) is a collection of frameworks and techniques that accumulate information from sources, gather it, and present it in a user-friendly format.
-        </p>
-        <p>
-          <strong>Importance of MIS</strong>
-          <ul>
-            <li>
-              The MIS can meet all the needs of a client through a variety of methods such as inquiry method, survey method, design method, and decision support system.
-            </li>
-            <li>
-              The MIS plays a major role in data making, communication, and issue verification, and helps in the process of decision-making.
-            </li>
-            <li>
-              The MIS helps the lesser administration faculty by giving the functional information to arranging, booking and control, and assists them with advancing in decision-production at the activity level to address what is happening.
-            </li>
-            <li>
-              The MIS helps the central administration in quick preparation, target setting, and controlling the business capacities. It is upheld by the utilization of the administration apparatuses of arranging and control.
-            </li>
-            <li>
-              The MIS helps the high-level administration in objective setting, vital preparation, and developing the field-tested strategies and their execution.
-            </li>
-          </ul>
-        </p>
-        <p>
-          <strong>Objectives of MIS</strong>
-          <br>
-          Benefits
-          <ul>
-            <li>
-              The quality and variety of the data assembled by MIS carries with it a large group of advantages for organizations of every kind.
-            </li>
-            <li>
-              It can assist with wiping out inefficient investing, for example, inactive energy and squandered assets to upgrade cost control.
-            </li>
-            <li>
-              It helps with the assessment of representatives, gear and cycles.
-            </li>
-            <li>
-              It very well may be utilized to quantify real execution against projected figures and financial plans.
-            </li>
-            <li>
-              It removes the work from ordering and keeping up with information streams all through an association.
-            </li>
-            <li>
-              It very well may be helpful in moderating the vulnerability and chance that are regularly intrinsic in upper-level direction.
-            </li>
-          </ul>
-        </p>
-        <p>
-          <strong>How Does MIS Work?</strong>
-          <ul>
-            <li>
-              Management Information Systems are very much like any remaining PC frameworks. They contain programming, equipment, clients, methodology, media, informing, information, and result.
-            </li>
-            <li>
-              While they are generally used to check an organization’s funds and help in bookkeeping, Management Information Systems are additionally regularly utilized at the executives, vital and, surprisingly, functional levels. Any place information can be utilized for commonsense critical thinking, MIS can be conveyed.
-            </li>
-            <li>
-              Basically, MIS is a blend of PC and administrative sciences. It tends to be coordinated into your current IT and functional arrangement, pulling information from an immense scope of inward and outer sources.
-            </li>
-            <li>
-              This information is then gathered into a focal storehouse to be parsed and investigated by the supervisory team.
-            </li>
-          </ul>
-        </p>
-      </div>
-      <div >
-        <p>
-          <strong>How Does MIS Work? (continued)</strong>
-          <ul>
-            <li>
-              This information is then gathered into a focal storehouse to be parsed and investigated by the supervisory team.
-            </li>
-            <li>
-              The MIS utilizes various software tools and technologies to process and analyze the data, generating reports, dashboards, and visualizations for decision-making.
-            </li>
-            <li>
-              Users can access the MIS through secure access rights, allowing them to view relevant information and perform specific tasks based on their roles and responsibilities.
-            </li>
-            <li>
-              MIS can integrate data from internal and external sources, providing a comprehensive view of the organization's operations and performance.
-            </li>
-            <li>
-              It enables efficient communication and collaboration among different departments and stakeholders by providing a centralized platform for sharing information and exchanging feedback.
-            </li>
-            <li>
-              MIS also supports automation and digitization, reducing manual effort and improving accuracy and efficiency in various processes.
-            </li>
-            <li>
-              The system facilitates data-driven decision-making, as managers can access real-time and accurate information to identify trends, spot opportunities, and address challenges effectively.
-            </li>
-          </ul>
-        </p>
-      </div>
+
+
+
+
+
+  </head>
+  <body>
+  <section id="what" class="what-section ">
+          <div class="container">
+            <div class="row ">
+              <div class="col-lg-8">
+                <h2>What is MIS?</h2>
+                <p>
+                  Management Information System (MIS) is a collection of frameworks and techniques that accumulate information from sources, gather it, and present it in a user-friendly format.
+                </p>
+                <p>
+                  MIS provides all management-related atomized solutions, Docs management, Deadline management, Next steps guide, reporting tools, dashboards, access rights on every document and data, digitization, automation for alerts, etc.
+                </p>
+              </div>
+              <div class="col-lg-4">
+                <img src="./assets/img/secondPage/ERP-bg.webp" class="img-fluid rounded" alt="Image" style="height: 70%; margin-top: 80px;">
+              </div>
+            </div>
+          </div>
+        </section>  
       
-
-
-
-
-
-
-
-
-
-
-
-
-
+   
+        <div class="row">
+          <div class="col-md-6">
+              <!-- Image goes here -->
+              <img src="./assets/img/secondPage/ERP2.webp" alt="Image" class="img-fluid">
+          </div>
+          <div class="col-md-6">
+              <h2 class="heading-title">Why is MIS Important for Businesses?</h2>
+              <section class="section-boxed">
+                  <div class="widget-container">   
+                  </div>
+                  <div class="widget-container">
+                      <div class="text-editor">
+                          <ul>
+                              <li>MIS systems are important for your organization since they allow you to streamline your workflow and address various problem areas in everyday operations.</li>
+                              <li>With these software solutions at your disposal, you can speed up customer service, eliminate redundant office processes, integrate data more effectively, and improve team communication.</li>   
+                          </ul>
+                      </div>
+                  </div>
+              </section>
+          </div>
+      </div>
+  
+  
+  
+  
+        <section id="what" class="what-section ">
+          <div class="container">
+            <div class="row ">
+              <div class="col-lg-8">
+                <h2>How Does MIS Work?</h2>
+                <p>
+                  A Management Information System works by reducing the number of resources required to run the business optimally while ensuring profitability and business improvement.
+                </p>
+                <p>
+                  The MIS system is different from a single software because it allows different organization modules of your company to work from one database.
+                </p>
+                <p>
+                  It optimizes resources, improves productivity, and drives business growth through streamlined operations.
+                </p>
+                <p>
+                  Real-time data visibility empowers informed decision-making, while automation reduces errors and increases productivity.
+                </p>
+              </div>
+              <div class="col-lg-4">
+                <img src="./assets/img/secondPage/erp3.jpg" class="img-fluid rounded" alt="Image" style="height: 70%; margin-top: 80px;">
+              </div>
+            </div>
+          </div>
+        </section>  
+      
+  
+  
+      
+        <div class="section">
+          <img src="./assets/img/secondPage/erp-function.png" style="width: 739px;  height: 268px;" alt="Image 4">
+          <h2 style="text-align: center;">Function of MIS System</h2>
+          <ul>
+            <li>Integration of Information</li>
+            <li>Centralized Data Management</li>
+            <li>Streamlined Business Processes</li>
+            <li>Resource Planning and Management</li>
+            <li>Financial Management</li>
+            <li>Supply Chain Management</li>
+            <li>Customer Relationship Management</li>
+            <li>Production Planning and Control</li>
+            <li>Quality Management</li>
+          </ul>
+        </div>
+      
+        <div class="section">
+          <img src="./assets/img/secondPage/erp-diagram.webp" style="width: 366px; height: 268px;" alt="Image 6">
+          <h2 style="text-align: center;">Benefits of MIS:</h2>
+          <ul>
+            <li>Increased Productivity</li>
+            <li>Enhanced Business Reporting</li>
+            <li>Better reporting tools with real-time data - A single source of truth – one integrated database for all business processes</li>
+            <li>Real-time Data & Enhanced Reporting</li>
+            <li>Cloud Accessibility</li>
+            <li>Better Customer Service - Improved access to customer information, Faster response times, Improved on-time delivery, Improved order accuracy</li>
+            <li>Cost Savings - Improved inventory planning, Better procurement management, Better customer service, Improved vendor relationship management</li>
+            <li>Making Realistic, Accurate Forecasts</li>
+          </ul>
+        </div>
 
 
 

@@ -27,6 +27,67 @@
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
 
+  
+  <style>
+    h2 {
+      text-align: center;
+      padding: 10px;
+      margin: 20px 0;
+      background-color: #009961ac;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 20px;
+    }
+
+    #hero .container {
+      background-color: rgba(43, 175, 190, 0.436);
+      padding: 20px;
+      border-radius: 20px;
+      margin-top: 60px;
+    }
+
+    #hero h1 {
+      font-size: 2.5rem;
+      color: #ebe7e7;
+    }
+
+    #hero p {
+      font-size: 1.4rem;
+      color: #f0eaea;
+      line-height: 1.6;
+    }
+    .mes-image {
+            max-width: 100%; /* Adjust the image width as needed */
+            height: 640px;
+        }
+
+    @media (max-width: 767px) {
+      #hero {
+        background-size: contain;
+      }
+
+      #hero .container {
+        padding: 10px;
+        border-radius: 10px;
+        margin-top: 60px;
+      }
+
+      #hero h1 {
+        font-size: 1.8rem;
+      }
+
+      #hero p {
+        font-size: 1.2rem;
+        line-height: 1.6;
+      }
+      .mes-image {
+            max-width: 100%; /* Adjust the image width as needed */
+            height: auto;
+        }
+    }
+  </style>
+
+
+
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
@@ -81,18 +142,23 @@
   </header>
   <!-- End Header -->
 
-  <section id="hero" class="bg-primary py-5" style="width: 100%; height: 100vh; background: url('./assets/img/secondPage/auto-emd.jpg') top center; background-size: cover; position: relative;">
+
+
+  <section id="hero" class="bg-primary py-5 iot-image" style="width: 100%; height: 100vh; background-image: url('./assets/img/secondPage/auto-emd.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center center; position: relative;">
+    <link rel="stylesheet" href="styles.css">
     <div class="container">
       <div class="row align-items-center">
-        <div class="col-md-6 text-md-start text-center text-white">
-          <h1 class="fw-bold">Embedded & Automation</h1>
+        <div class="col-md-12 text-center">
+          <h1 class="fw-bold">Embedded & Automation:</h1>
+          <p style="white-space: normal;">The usage of embedded systems in automated systems is ideal. Automated systems are designed to speed up production and other processes while lowering the possibility of human error and enhancing worker safety. Applications for automation use embedded flash memory to carry out operations.</p>
+          <p style="white-space: normal;">Embedded systems are crucial in automated systems, offering numerous benefits. They accelerate production, minimize human error, and improve worker safety. Automation applications leverage embedded flash memory to efficiently execute operations, ensuring smooth and reliable performance throughout various processes.</p>
         </div>
-        <!-- <div class="col-md-6">
-          <img src="./assets/img/secondPage/auto-emd.jpg" class="img-fluid rounded" alt="Image" />
-        </div> -->
       </div>
     </div>
   </section>
+  
+
+  
   <!-- ========================================What=============================================== -->
   <section class="section-left">
     <div class="container">
