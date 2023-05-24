@@ -112,7 +112,133 @@
 
 
 
+<style>
 
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
+  justify-items: center;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1000px;
+  padding: 20px;
+}
+
+
+
+.grid-item {
+  grid-column: span 1;
+  height: 420px;
+  grid-row: span 1;
+  text-align: center;
+  background-color: #fff;
+  padding: 20px;
+  padding-right: 30px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+#values .grid-item {
+  grid-column: span 1;
+  height: 300px;
+  grid-row: span 1;
+  text-align: center;
+  background-color: #fff;
+  padding: 20px;
+  padding-right: 30px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.grid-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.grid-item-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.grid-item-icon {
+  font-size: 3rem;
+  color: #e74c3c;
+  margin-bottom: 10px;
+}
+
+.grid-item h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.grid-item p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+@media only screen and (max-width: 479px) {
+  .grid-container {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+    gap: 1rem;
+  }
+
+
+  .grid-item h3 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+  }
+
+  .grid-item p {
+    font-size: 1rem;
+    line-height: 1.3;
+  }
+}
+
+
+.values-section-title {
+  padding-bottom: 5px;
+  padding-left: 70px;
+}
+
+.values-section-title h2 {
+  font-size: 32px;
+  color: #272222;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  
+}
+
+.values-section-title h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #009961;
+  bottom: 0;
+  left: 0;
+}
+
+.values-section-title p {
+  margin-bottom: 0;
+  color: #352f2f;
+  font-size: 15px;
+}
+
+
+
+
+</style>
 
 
 
@@ -562,10 +688,10 @@ overflow: visible;
   
 
       
-  <section id="about" class="about">
+  <section id="about" class="about" style="    padding: 29px 0px;">
     <div class="container">
     
-    <div class="section-title">
+    <div id="values" class="section-title">
       <h2>Values</h2>
       <p>V2SK provides cost-efficient products including cloud-based services, cybersecurity solutions,
         and data analytics tools to help businesses stay ahead in the technology-driven era with expert guidance and
@@ -1033,20 +1159,67 @@ overflow: visible;
         </div>
         <div class="col-lg-6 pt-4 pt-lg-0">
           <p>Join us today and unlock your potential:</p><br>
-          <ul>
-          <i class="ri-check-double-line"> Accelerate your career growth with V2SK.</i><br><br>
-          <i class="ri-check-double-line"> Explore new job opportunities and expand your skills.</i><br><br>
-          <i class="ri-check-double-line">Join a dynamic and collaborative team.</i><br><br>
-          <i class="ri-check-double-line">Work on cutting-edge projects that push technological boundaries.</i>
-            
-          </ul><br><br>
+          <!-- <ul>
+          <i class="ri-check-double-line"> </i><br><br>
+          <i class="ri-check-double-line"></i><br><br>
+          <i class="ri-check-double-line"></i><br><br>
+          <i class="ri-check-double-line"></i>
+
+      
+           </ul><br><br> -->
+
+
+          
+  <div class="row content">
+    <div class="col-lg-6">
+      <ul>
+        <li><i class="ri-check-double-line"></i> Accelerate your career growth with V2SK.</li>
+        <li><i class="ri-check-double-line"></i>  Explore new job opportunities and expand your skills.</li>
+        <li><i class="ri-check-double-line"></i>Join a dynamic and collaborative team.</li>
+        <li><i class="ri-check-double-line"></i>Work on cutting-edge projects that push technological boundaries.</li>
+      </ul>
+    </div> 
+  </div>
+
+
+
           <a href="./Career.html" class="get-started-btn scrollto">Apply Now</a>
+
 
         </div>
       </div>
     </div>
   </section>
 
+<style>
+  
+.Career .content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.Career .content ul li {
+  padding-left: 28px;
+  position: relative;
+}
+
+.Career .content ul li+li {
+  margin-top: 10px;
+}
+
+.Career .content ul i {
+  position: absolute;
+  left: 0;
+  top: 2px;
+  font-size: 20px;
+  color: #009961;
+  line-height: 1;
+}
+
+.Career .content p:last-child {
+  margin-bottom: 0;
+}
+</style>
 
 
 
@@ -1060,13 +1233,6 @@ overflow: visible;
 
 
 
-
-
-
-  </div>
-
-  </div>
-  </section>
 
   <!-- ======= Pricing Section ======= -->
   <!-- <section id="pricing" class="pricing">

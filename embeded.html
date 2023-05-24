@@ -25,6 +25,8 @@
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
 
 
   
@@ -32,7 +34,7 @@
     h2 {
       text-align: center;
       padding: 10px;
-      margin: 20px 0;
+      margin: 38px 0;
       background-color: #009961ac;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
       border-radius: 20px;
@@ -88,8 +90,7 @@
 
 
 
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
+
 
 </head>
 
@@ -99,47 +100,49 @@
   <header id="header" class="fixed-top ">
     <div class="container-fluid">
 
-      <div class="row justify-content-center">
-        <div class="col-xl-9 d-flex align-items-center justify-content-lg-between">
-          <h1 class="logo me-auto me-lg-0"><a href="index.html"><img src="assets/img/logo.png" class="logo"></a></h1>
+        <div class="row justify-content-center">
+            <div class="col-xl-9 d-flex align-items-center justify-content-lg-between">
+                <h1 class="logo me-auto me-lg-0"><a href="index.html"><img src="assets/img/logo.png"
+                            class="logo"></a></h1>
 
-          <nav id="navbar" class="navbar order-last order-lg-0">
+         
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto active" href="./index.html">Home</a></li>
+          <li><a class="nav-link scrollto" href="./index.html#about">About</a></li>
+          <li class="dropdown ">
+            <a href="#products"><span>Products</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-              <li><a class="nav-link scrollto" href="#about">About</a></li>
-              <li class="dropdown">
-                <a href="#products"><span>Products</span> <i class="bi bi-chevron-down"></i></a>
-                <ul>
-                  <li><a href="./mes.html">MES (MANUFACTURING EXECUTION SYSTEM)</a></li>
-                  <li><a href="./iot.html">IOT (INTERNET OF THINGS)</a></li>
-                  <li><a href="./embeded.html">EMBEDDED AND AUTOMATION</a></li>
-                  <li><a href="./CRM.html">CRM ( CUSTOMER RELATIONSHIP MANAGEMENT)</a></li>
-                  <li><a href="./lms.html">LMS (LEAD MANAGEMENT SYSTEM)</a></li>
-                  <li><a href="./erp.html">ERP (ENTERPRISE RESOURCE PLANNING)</a></li>
-                  <li><a href="./mis.html">MIS (MANAGEMENT INFORMATION SYSTEMS)</a></li>
-                </ul>
-              </li>
-
-              <li><a class="nav-link scrollto" href="#Career">Career</a></li>
-              <!-- <li class="dropdown"><a href="#">Services<span></span> <i class="bi bi-chevron-down"></i></a>
-                <ul>
-                  <li><a href="#">BUSINESS SECURITY</a></li>
-                  <li><a href="#">BUSINESS SERVICES</a></li>
-                  <li><a href="#">BUSINESS SOLUTION</a></li>
-                </ul> -->
-              </li>
-              <li><a class="nav-link scrollto" href="#contact">NEED ASSISTANCE</a></li>
+              <li><a href="./mes.html">MES (MANUFACTURING EXECUTION SYSTEM)</a></li>
+              <li><a href="./iot.html">IOT (INTERNET OF THINGS)</a></li>
+              <li><a href="./embeded.html">EMBEDDED AND AUTOMATION</a></li>
+              <li><a href="./CRM.html">CRM ( CUSTOMER RELATIONSHIP MANAGEMENT)</a></li>
+              <li><a href="./lms.html">LMS (LEAD MANAGEMENT SYSTEM)</a></li>
+              <li><a href="./erp.html">ERP (ENTERPRISE RESOURCE PLANNING)</a></li>
+              <li><a href="./mis.html">MIS (MANAGEMENT INFORMATION SYSTEMS)</a></li>
             </ul>
-            <i class="bi bi-list mobile-nav-toggle"></i>
-          </nav>
-          <!-- .navbar -->
+          </li>
 
-          <a href="#about" class="get-started-btn scrollto">Get Started</a>
+          <li><a class="nav-link scrollto" href="./Career.html">Career</a></li>
+          <!-- <li class="dropdown"><a href="#">Services<span></span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">BUSINESS SECURITY</a></li>
+              <li><a href="#">BUSINESS SERVICES</a></li>
+              <li><a href="#">BUSINESS SOLUTION</a></li>
+            </ul> -->
+          </li>
+          <li><a class="nav-link scrollto" href="./index.html#contact">NEED ASSISTANCE</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+                <!-- .navbar -->
+
+                <a href="./index.html#about" class="get-started-btn scrollto">Get Started</a>
+            </div>
         </div>
-      </div>
 
     </div>
-  </header>
+</header>
   <!-- End Header -->
 
 
@@ -184,7 +187,8 @@
           </p>
         </div>
         <div class="col-md-6">
-          <img src="./assets/img/secondPage/embedded-systems-design.webp" alt="Image on Left" class="img-fluid">
+          <img src="./assets/img/secondPage/embedded-systems-design.webp" alt="Image on Left" class="img-fluid rounded" style="margin-top: 146px;
+          height: 78%;">
         </div>
       </div>
     </div>
@@ -195,7 +199,8 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6">
-          <img src="./assets/img/secondPage/e.webp" alt="Image on Right" class="img-fluid">
+          <img src="./assets/img/secondPage/e.webp" alt="Image on Right" class="img-fluid rounded" style="margin-top: 146px;
+          height: 69%">
         </div>
         <div class="col-md-6">
           <h2>How Are Automation and Embedded Systems Related?</h2>
@@ -222,43 +227,17 @@
   </section>
 
 
-  <!-- -======================================benifits==================================================== -->
-
-  <!-- <section id="benefits" class="benefits-section challenges-section"  style="background-image:url(./assets/img/backgrn.jpg)" >
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8">
-          <h2>What Are The Benefits Of IoT To Organizations?</h2>
-          
-          <ul >
-            <li>In order to monitor their entire business operations.</li>
-            <li>Boost customer experience (CX).</li>
-            <li>Save time and money.</li>
-            <li>Increase staff productivity.</li>
-            <li>Integrate and adapt business models.</li>
-            <li>Improve business decisions.</li>
-            <li>And increase revenue.</li>
-          </ul>
-        </div>
-        <div class="col-lg-4">
-          <img src="./assets/img/secondPage/iot2.jpg" alt="Image">
-        </div>
-      </div>
-    </div>
-  </section> -->
-
 
  <!-- ========================================challanges=============================================== -->
 
 
 
-
- <section id="challenges" class="challenges-sections"  style="background-image:url(./assets/img/backgrn.jpg)"   >
+ <section id="challenges" class="challenges-sections" style="background-color: rgba(164, 164, 164, 0.56);">
   <div class="container">
     <div class="row">
       <div class="col-lg-4">
-        <h2>Types Of Embedded Systems</h2>
-        <p>
+        <h2 style="font-size: 24px;">Types Of Embedded Systems</h2>
+        <p style="font-size: 16px;">
           According to the microcontroller's performance, embedded systems are categorized as follows:
           <br>
           <br>
@@ -269,21 +248,22 @@
           <i class="bi bi-rocket-fill"></i> Highly developed embedded systems.
         </p>
       </div>
-      <div class="col-lg-4">
-        <img src="./assets/img/secondPage/embedded-system1 - Copy.png" alt="embeded Image" />
+      <div class="col-lg-4" style="text-align: center;">
+        <img src="./assets/img/secondPage/embedded-system1 - Copy.png" alt="embeded Image" style="max-width: 100%;height: 350px;border-radius: 8px;margin-top: 40px;">
       </div>
       <div class="col-lg-4">
-        <h2> Following is a description of embedded systems </h2>
-        <ul class="iot-devices-list">
-          <li><i class="bi bi-wrench"></i> Independent embedded systems.</li>
-          <li><i class="bi bi-hand-thumbs-up"></i> Instantaneous embedded systems.</li>
-          <li><i class="bi bi-gear-wide-connected"></i> Embedded systems that are networked.</li>
-          <li><i class="bi bi-shield-lock-fill"></i> Embedded systems on the move.</li>
+        <h2 style="font-size: 24px;">Following is a description of embedded systems</h2>
+        <ul class="iot-devices-list" style="font-size: 16px;">
+          <i class="bi bi-wrench"></i> Independent embedded systems. <br>
+          <i class="bi bi-hand-thumbs-up"></i> Instantaneous embedded systems. <br>
+          <i class="bi bi-gear-wide-connected"></i> Embedded systems that are networked. <br>
+          <i class="bi bi-shield-lock-fill"></i> Embedded systems on the move. <br>
         </ul>
       </div>
     </div>
   </div>
 </section>
+
 
   <!-- -======================================Types Of Embedded Systems==================================================== -->
 
@@ -315,7 +295,10 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6">
-          <img src="./assets/img/secondPage/puepose.jfif" alt="Image on Right" class="img-fluid">
+          <img src="./assets/img/secondPage/puepose.jfif" alt="Image on Right" class="img-fluid" style="
+          margin-left: 33px;
+          margin-top: 143px;
+          border-radius: 8px;">
         </div>
         <div class="col-md-6">
           <h2>The purpose of embedded and Automation:</h2>

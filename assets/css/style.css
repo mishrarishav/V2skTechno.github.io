@@ -553,11 +553,6 @@ h6 {
   }
 }
 
-
-
-
-
-
 /*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/
@@ -573,7 +568,11 @@ section {
 .section-title {
   padding-bottom: 30px;
 }
+#values .section-title{
 
+    padding-bottom: 0px;
+  
+}
 .section-title h2 {
   font-size: 32px;
   color: #272222;
